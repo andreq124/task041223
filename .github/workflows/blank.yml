@@ -21,8 +21,8 @@ jobs:
       - name: send default message
         uses: appleboy/telegram-action@master
         with:
-          to: task0412_bot
-          token: 714820764
+          to: 714820764
+          token: 6960121384:AAG_B0Q2sxwL386QIisQofnq0Hei_PTYzJE
   deploy:
     runs-on: ubuntu-latest
     needs: [build]
@@ -37,5 +37,5 @@ jobs:
       - name: send default message
         uses: appleboy/telegram-action@master
         with:
-          to: task0412_bot
-          token: 714820764
+          to: 714820764
+          token: 6960121384:AAG_B0Q2sxwL386QIisQofnq0Hei_PTYzJE
