@@ -19,7 +19,7 @@ jobs:
       - run: docker build -t ghcr.io/andreq124/task041223:1.0 .
       - run: docker push ghcr.io/andreq124/task041223:1.0
       - name: send default message
-        uses: appleboy/telegram-action@master
+        uses: appleboy/telegram-action@task0412_bot
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
@@ -35,7 +35,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - run: docker run ghcr.io/andreq124/task041223:1.0
       - name: send default message
-        uses: appleboy/telegram-action@master
+        uses: appleboy/telegram-action@task0412_bot
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
